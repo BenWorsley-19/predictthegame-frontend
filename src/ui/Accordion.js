@@ -1,5 +1,4 @@
 import styles from './Accordion.module.css';
-import PredictionOptionItem from '../components/predictionmaker/PredictionOptionItem'; // TODO
 import { useState, useRef } from 'react';
 import Chevron from './Chevron';
 
@@ -22,7 +21,7 @@ const Accordion = (props) => {
                         <Chevron width={10} fill={'#01867B'}  className={`${styles['title']} ${styles['title-chevron']} ${active && styles.rotate}`} />
                         <p className={`${styles['title']} ${styles['title-name']}`}>{props.title}</p>
                     </div>
-                    <p className={styles['title']}>{props.points} points</p> {/*TODO make this optional*/}
+                    <p className={styles['points']}>{props.points} points</p> {/*TODO make this optional*/}
                 </span>
             </button>
             <div ref={content} style={{maxHeight: `${height}`}} className={styles['accordion-drop-down']}>
