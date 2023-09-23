@@ -21,3 +21,8 @@
 .selected {
     background-color: #96e0e2;
 }
+
+
+.disabled {
+    cursor: not-allowed;
+}

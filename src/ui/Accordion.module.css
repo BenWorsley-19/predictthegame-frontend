@@ -6,6 +6,7 @@
 
 .accordion {
     background-color: #FFFFFF;
+    /* background-color: #dfdbdb; */
     width: 100%;
     cursor: pointer;
     border-radius: 6px;
